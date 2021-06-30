@@ -14,8 +14,8 @@ const TodoList = () => {
             {/* <img className="flex wrap1 logoTodo" src = {logo} alt = 'logo'></img> */}
             <div className = 'todoList'>
                 <div className="todoLabel">{Name}'s To Do List</div>
-                <ShowToDo/> 
-                <AddTodos/>
+                <ShowToDo id = {Name}/> 
+                <AddTodos id = {Name}/>
                 <button className = 'sub red' onClick={() => auth.signOut()}>SignOut</button>
             </div>
         </>

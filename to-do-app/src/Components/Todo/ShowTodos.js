@@ -2,24 +2,16 @@ import { useEffect, useState } from "react";
 import firebase from "../firebase";
 import 'firebase/auth';
 
-// const auth = firebase.auth()
-// const user = auth.currentUser;
-const getUserId = () =>{
-  firebase.auth().onAuthStateChanged((user) => {
-    if (user) {
-      return(user.displayName);
-    } else {
-      // User is signed out
-      // ...
-    }
-  }); //need help
-}
-const idz = getUserId();
+const auth = firebase.auth()
+const user = auth.currentUser;
+
 
 const db = firebase.firestore();
 
-const ShowToDo = () => {
+const ShowToDo = (props) => {
   
+    const idz = props.id;
+    
     const [item, setItem] = useState([]);
 
     const handleDelete = (id) =>{
