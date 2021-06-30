@@ -1,0 +1,131 @@
+html{
+  background-color: black;
+}
+a{
+  text-decoration: none;
+}
+body{
+  margin: 0;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+.page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.dashboard{
+  width: 100%;
+  height: 15vh;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  background: #C4C4C4;
+
+}
+.dashboardText{  
+  width: 100%;
+  height: 115px;
+  left: 205px;
+  top: 10px;
+  text-align: center;
+
+  font-family: Times New Roman;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100px;
+  line-height: 115px;
+  color: black;
+  
+  text-align: center;
+}
+.buttonz{
+  width: 475px;
+  height: 130px;
+  font-family: Times New Roman;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100px;
+  line-height: 115px;
+  margin: 15px; 
+  text-align: center;
+  background: #008000;
+}
+.bntTodo{
+  left: 90px;
+  top: 400px;
+}
+.bntNav{
+  left: 930px;
+  top: 400px;
+}
+.btnClock{
+  left: 510px;
+  top: 600px;
+}
+.todoList{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 80vh;
+  text-align: center;
+
+}
+.todoLabel{
+  width: 100%;
+  height: 80px;
+  font-family: Times New Roman;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 40px;
+  align-items: center;
+  text-align: center;
+  text-decoration-line: underline;
+  color: white;
+}
+.todoText{
+  width: 500px;
+  font-family: Times New Roman;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 40px;
+  padding: 5px;
+  color: #FFFFFF;
+}
+.textBox{
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 5vh;
+  box-sizing: border-box; 
+}
+.sub{
+  background:green;
+  height: 5vh;
+  font-size: 25px;
+  float: center;
+  width: 100%;
+  margin-top: 2vh;
+}
+.cancel{
+  border: none;
+  outline:none;
+  color: red;
+  background: black;
+  font-size: 27px;
+  left: 10px;
+  font-family: Times New Roman;
+  text-decoration: underline;
+  position:relative;
+  padding-bottom: 10px;
+  top: -2px;
+}
