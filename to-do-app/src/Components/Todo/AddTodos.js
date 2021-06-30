@@ -1,10 +1,29 @@
 import { useState } from "react";
-import firebase from "./firebase";
+import firebase from "../firebase";
+import 'firebase/auth';
+
+// const auth = firebase.auth()
+// let user = auth.currentUser;
+
+const getUserId = () =>{
+  firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
+      return(user.displayName);
+    } else {
+      // User is signed out
+      // ...
+    }
+  });//need help
+}
+const idz = getUserId();
+
+
 const db = firebase.firestore();
+
 
 const AddTodos = () => {
 
-    const collection = db.collection("Todo");
+    const collection = db.collection(`${idz}'s Todo`);
     const [input, setInput] = useState("");
     
     const handleSubmit = (e) => {

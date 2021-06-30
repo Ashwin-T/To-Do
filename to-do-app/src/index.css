@@ -129,3 +129,28 @@ body{
   padding-bottom: 10px;
   top: -2px;
 }
+.sign-in {
+  color: #282c34;
+  background: white;
+  max-width: 100%;
+  margin: 0 auto;
+  height: 5vh;
+  font-size: 25px;
+  text-align: center;
+  justify-content: center;  
+  display: flex;
+}
+.flex{
+  display:flex;
+}
+.wrap1{
+  justify-content: flex-start;
+}
+.logoTodo{
+  height: 500px;
+  width: 500px;
+}
+.red{
+  background: red;
+}
+

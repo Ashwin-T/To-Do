@@ -1,7 +1,11 @@
-import Todo from './Components/Todo/Todo.js';
+import MainPage from './Components/MainPage';
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
-function App() {
+
+
+const App = () =>{
+ 
+
   return (
     <div className="App">
       <Router>
@@ -9,7 +13,7 @@ function App() {
           <Switch>
 
             <Route exact path="/">
-              <Todo/>
+              <MainPage/>
             </Route>
 
 
